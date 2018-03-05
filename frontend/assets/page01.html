@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JS</title>
+  <link href="styles/index.css" rel="stylesheet">
+  <script src="scripts/libs/jquery-3.3.1.js"></script>
+  <script src="scripts/libs/jquery-ui.min.js"></script>
+  <script src="scripts/app.js"></script>
+</head>
+
+<body>
+  <header class="main-header">
+    <nav>
+      <ul class="menu1">
+        <li class="menu1__item" data-item="home">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="menu1__item menu1__item_active" data-item="p01">
+          <a href="page01.html">page 01</a>
+        </li>
+        <!-- <li class="menu1__item" data-item="p02">
+          <a href="page02.html">page 02</a>
+        </li>
+        <li class="menu1__item" data-item="p03">
+          <a href="page03.html">page 03</a>
+        </li>
+        -
+        <li class="menu1__item" data-item="p04">
+          <a href="page04.html">page 04</a>
+        </li> -->
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+
+    <div class="content">
+      <h1>Форма обратной связи</h1>
+
+      <form action="/handler.php" method="POST" name="form01">
+        <label for="input-name">Введите Ваше имя</label>
+        <input type="text" name="inputName" id="input-name" placeholder="John Doe">
+        <div id="nameError"></div>
+        <br>
+        <label for="input-phone">Введите Ваш номер телефона в формате: +7(xxx)xxx-xxxx</label>
+        <input type="tel" name="phone" id="input-phone" placeholder="+7(499)368-9517">
+        <div id="phoneError"></div>
+        <br>
+        <label for="input-email">Введите Ваш email</label>
+        <input type="email" name="email" id="input-email" placeholder="john-doe@mail.ru">
+        <div id="emailError"></div>
+        <label for="input-birthday">Введите День Вашего рождения (необязательно)</label>
+        <input type="date" name="inputBirthday" id="input-birthday" placeholder="05.03.2001">
+        <div id="birthdayError"></div>
+        <label for="input-town">Введите Город проживания (необязательно)</label>
+        <input type="text" name="inputTown" id="input-town" placeholder="Moscow">
+        <div id="townError"></div>
+        <div id="towns-list"></div>
+        <br>
+        <label for="input-message">Для комментариев</label>
+        <textarea name="message" id="input-message" cols="40" rows="10"></textarea>
+        <input type="submit" value="Submit" name="btnSubmit">
+      </form>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+body
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+
+.menu1
+  margin: 0 auto;
+  color: rgb(247, 245, 240);
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  padding: 0 14%;
+  font: 14px "Roboto", sans-serif;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+  &__item
+    display: inline-block;
+    border-right: 1px solid rgba(211, 215, 216, 0.226);
+    margin: 0;
+    padding: 0;
+    background: -moz-linear-gradient(
+    top,
+    rgba(240, 249, 255, 1) 0%,
+    rgba(203, 235, 255, 1) 47%,
+    rgba(161, 219, 255, 1) 100%);
+    
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+    top,
+    rgba(240, 249, 255, 1) 0%,
+    rgba(203, 235, 255, 1) 47%,
+    rgba(161, 219, 255, 1) 100%);
+    
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+    to bottom,
+    rgba(240, 249, 255, 1) 0%,
+    rgba(203, 235, 255, 1) 47%,
+    rgba(161, 219, 255, 1) 100%);   
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+  &__item_active
+    background: -moz-linear-gradient(
+    top,
+    rgba(122, 188, 255, 1) 0%,
+    rgba(96, 171, 248, 1) 44%,
+    rgba(64, 150, 238, 1) 100%);
+    
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+    top,
+    rgba(122, 188, 255, 1) 0%,
+    rgba(96, 171, 248, 1) 44%,
+    rgba(64, 150, 238, 1) 100%);
+    
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+    to bottom,
+    rgba(122, 188, 255, 1) 0%,
+    rgba(96, 171, 248, 1) 44%,
+    rgba(64, 150, 238, 1) 100%);
+
+.menu1__item a
+  text-decoration: none;
+  color: #4c4c4c;
+  display: block;
+  padding: 10px 15px;
+  &:hover
+    background-color: #006cc9;
+    color: #eaeaea;
+
+  &:first-child
+    border-left: 1px solid rgba(211, 215, 216, 0.226);
+
+.container
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 1% 2%;
+
+.content
+  margin: 15px auto;
+  width: 100%;
+
+  input
+    margin: 10px;
+    padding: 8px 0 8px 6px;
+
+/* .panel Begin */
+.panel
+  width: 50%;
+  border-top: 1px solid #999;
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 1.2rem;
+
+
+.panel__title
+  padding: 15px 0;
+  background: rgb(252, 255, 244);
+  /* Old browsers */
+
+  background: -moz-linear-gradient(
+  top,
+  rgba(252, 255, 244, 1) 0%,
+  rgba(223, 229, 215, 1) 40%,
+  rgba(179, 190, 173, 1) 100%
+  );
+  /* FF3.6-15 */
+
+  background: -webkit-linear-gradient(
+  top,
+  rgba(252, 255, 244, 1) 0%,
+  rgba(223, 229, 215, 1) 40%,
+  rgba(179, 190, 173, 1) 100%
+  );
+  /* Chrome10-25,Safari5.1-6 */
+
+  background: linear-gradient(
+  to bottom,
+  rgba(252, 255, 244, 1) 0%,
+  rgba(223, 229, 215, 1) 40%,
+  rgba(179, 190, 173, 1) 100%
+  );
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+.panel__item
+  display: block;
+  position: static;
+  margin: 0;
+  padding: 10px 15px;
+  border-bottom: 1px solid #999;
+  background: linear-gradient(to bottom, rgb(247, 244, 244), #bfd3d3);
+
+/* Panel End */
+
+  input[type="submit"]
+    padding 4px 8px
+    border-radius: 4px

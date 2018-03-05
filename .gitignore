@@ -1,0 +1,5 @@
+.DS_Store
+manifest/
+node_modules/
+tmp/
+_log/
